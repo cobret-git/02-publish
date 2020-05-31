@@ -1,0 +1,84 @@
+.container {
+    max-width: 1480px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.social__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+    .social__links-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid #c4c0cf;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+.h2-main {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 30px;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 94px;
+        height: 3px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+}
+.h3-main {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+}
+.progress-bar {
+    width: 514px;
+    height: 43px;
+    background-color: #615474;
+    border-radius: 4px;
+    overflow: hidden;
+    .progress-bar__fill {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background-color: #ffd670;
+        min-width: 220px;
+        height: 100%;
+        padding: 0 20px;
+    }
+    .progress-bar__property {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 600;
+    }
+    .progress-bar__value {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: uppercase;
+        color: #4a5561;
+        font-weight: 900;
+    }
+}
