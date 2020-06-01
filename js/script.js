@@ -6,4 +6,17 @@ $(function(){
         var size = progressValue[a].innerText.slice(0, -1);
         $(progressFill[a]).css({ "width": size + '%'})
     }
+});
+
+$('.slider-depiction').slick({
+    // arrows: false
+    prevArrow: $('.slider-depiction__arrow-prev'),
+    nextArrow: $('.slider-depiction__arrow-next'),
+    asNavFor: '.slider-description'
+});
+$('.slider-description').slick({
+    arrows: false,
+    draggable: false,
+    fade: true,
+    asNavFor: '.slider-depiction'
 })

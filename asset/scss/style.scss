@@ -1,5 +1,6 @@
 @import 'reset.scss';
 @import 'block.scss';
+@import 'libs.min.scss';
 
 @mixin f-center-between {
     display: flex;
@@ -163,5 +164,132 @@
     }
     .about__bottom-progress {
         margin-top: 14px;
+    }
+}
+
+.portfolio {
+    padding: 90px 0 0;
+    background-color: #ffd670;
+}
+.portfolio__top {
+    .portfolio__top-h2 {
+        color: #fff;
+        &::before {
+            background-color: #fff0ca;
+        }
+    }
+    .portfolio__top-h3 {
+        color: #fff0ca;
+        margin-top: 18px;
+        text-align: center;
+    }
+}
+.portfolio__middle {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 120px;
+}
+.portfolio__middle-left {
+    max-width: 483px;
+    margin-right: 50px;
+    .slider-depiction__h3 {
+        color: #fff1ce;
+    }
+    .slider-descripto__headline {
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        font-size: 23px;
+        color: #fff;
+        margin: 25px 0;
+    }
+    .slider-description__hr {
+        margin: 16px 0;
+        border-top: 1px solid #ffe39c;
+    }
+    .slider-description__list {
+        margin: 25px 0;
+        .list__item {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            font-size: 15px;
+            color: #fff;
+            margin-left: 30px;
+            padding-left: 25px;
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                background-color: #fff;
+                transform: rotate(45deg);
+                width: 10px;
+                height: 10px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                margin: auto 0;
+            }
+        }
+    }
+    .slider-description__p {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 2em;
+        color: #fff;
+    }
+    .slider-description__tags {
+        margin-top: 25px;
+        .slider-description__tag {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            font-size: 15px;
+            color: #fff;
+            &::after {
+                content: ', ';
+            }
+            &:last-child::after {
+                content: '';
+            }
+
+        }
+    }
+}
+.portfolio__middle-right {
+    position: relative;
+    .slider-depiction {
+        width: 970px;
+        height: 680px;
+        position: relative;
+    }
+    .slider-depiction__image {
+        object-fit: cover;
+    }
+    .slider-depiction__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #c6aa6d;
+        width: 63px;
+        height: 78px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        z-index: 2;
+        img {
+            width: 24px;
+        }
+    }
+    .slider-depiction__arrow-prev {
+        border-radius: 0 4px 4px 0;
+        left: 0;        
+    }
+    .slider-depiction__arrow-next {
+        border-radius: 4px 0 0 4px;
+        right: 0;
     }
 }
