@@ -6,7 +6,7 @@ $(function(){
         var size = progressValue[a].innerText.slice(0, -1);
         $(progressFill[a]).css({ "width": size + '%'})
     }
-});
+
 
 $('.slider-depiction').slick({
     // arrows: false
@@ -20,3 +20,19 @@ $('.slider-description').slick({
     fade: true,
     asNavFor: '.slider-depiction'
 })
+$('.portfolio__bottom-grid').isotope({
+
+});
+$('.portfolio__bottom-button').on('click touchart', function(){
+    $('.portfolio__bottom-button').removeClass('portfolio__bottom-button--active');
+    $(this).addClass('portfolio__bottom-button--active');
+    var filterValue = $(this).attr('data-i');
+    console.log(filterValue)
+    $('.portfolio__bottom-grid').isotope({ filter: filterValue})
+})
+// $('.portfolio__bottom-grid').isotope({
+//     getSortData: {
+
+//     }
+// })
+});

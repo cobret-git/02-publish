@@ -293,3 +293,86 @@
         right: 0;
     }
 }
+.portfolio__bottom {
+    margin-top: 90px;
+    text-align: center;
+    .portfolio__bottom-buttons {
+        display: inline-block;
+    }
+    .portfolio__bottom-button {
+        font-family: 'Roboto Slab', serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 12px;
+        color: #fff;
+        padding: 10px 15px;
+        border: 1px solid transparent;
+        &:not(:last-child) {
+            margin-right: 45px;
+        }
+        &--active {
+            border: 1px solid #fff0ca;
+        }
+
+    }
+}
+.portfolio__bottom-grid {
+    margin-top: 60px;
+    .grid-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        text-align: center;
+        width: 340px;
+        height: 340px;
+        padding: 65px;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 340px;
+            height: 340px;
+            border-radius: 20px;
+            background-color: #5c5766;
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+    }
+    .grid-item__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #bc492b;
+        width: 64px;
+        height: 64px;
+        margin-top: 10px;
+        margin-bottom: 64px;
+    }
+    .grid-item__h5 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        color: #fff;
+        font-size: 16px;
+    }
+    .grid-item__p {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 20px;
+        color: #fff;
+        margin-top: 15px;
+        max-width: 260px;
+    }
+    .grid-item__btn-img {
+        width: 24px;
+    }
+}
