@@ -264,95 +264,8 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="portfolio__bottom">
-                <div class="portfolio__bottom-buttons">
-                    <button class="portfolio__bottom-button portfolio__bottom-button--active" data-i="*">All</button>
-                    <button class="portfolio__bottom-button" data-i="web-design">Web Design</button>
-                    <button class="portfolio__bottom-button" data-i="codding">Codding</button>
-                    <button class="portfolio__bottom-button" data-i="photography">Photgraphy</button>
-                    <button class="portfolio__bottom-button" data-i="freebies">Freebies</button>
-                </div> -->
-                <!-- <div class="portfolio__bottom-grid">
-                    <div class="grid-item web-design" data-i="web-design codding">
-                        <h5 class="grid-item__h5">iOS 7 Weather App Design</h5>
-                        <p class="grid-item__p">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique mollitia tenetur animi!
-                        </p>
-                        <a class="grid-item__btn" href="#">
-                            <picture>
-                                <img class="grid-item__btn-img" src="asset/image/icon__plus.svg" alt="plus">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="grid-item codding" data-i="web-design codding">
-                        <h5 class="grid-item__h5">Windows 10 Weather App</h5>
-                        <p class="grid-item__p">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique mollitia tenetur animi!
-                        </p>
-                        <a class="grid-item__btn" href="#">
-                            <picture>
-                                <img class="grid-item__btn-img" src="asset/image/icon__plus.svg" alt="plus">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="grid-item" data-i="photography">
-                        <h5 class="grid-item__h5">Something</h5>
-                        <p class="grid-item__p">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique mollitia tenetur animi!
-                        </p>
-                        <a class="grid-item__btn" href="#">
-                            <picture>
-                                <img class="grid-item__btn-img" src="asset/image/icon__plus.svg" alt="plus">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="grid-item" data-i="freebies codding">
-                        <h5 class="grid-item__h5">thing</h5>
-                        <p class="grid-item__p">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique mollitia tenetur animi!
-                        </p>
-                        <a class="grid-item__btn" href="#">
-                            <picture>
-                                <img class="grid-item__btn-img" src="asset/image/icon__plus.svg" alt="plus">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="grid-item" data-i="web-design codding">
-                        <h5 class="grid-item__h5">Andorid 8 App Design</h5>
-                        <p class="grid-item__p">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique mollitia tenetur animi!
-                        </p>
-                        <a class="grid-item__btn" href="#">
-                            <picture>
-                                <img class="grid-item__btn-img" src="asset/image/icon__plus.svg" alt="plus">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="grid-item" data-i="web-design">
-                        <h5 class="grid-item__h5">Web Page</h5>
-                        <p class="grid-item__p">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique mollitia tenetur animi!
-                        </p>
-                        <a class="grid-item__btn" href="#">
-                            <picture>
-                                <img class="grid-item__btn-img" src="asset/image/icon__plus.svg" alt="plus">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="grid-item" data-i="freebies">
-                        <h5 class="grid-item__h5">Another thing</h5>
-                        <p class="grid-item__p">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique mollitia tenetur animi!
-                        </p>
-                        <a class="grid-item__btn" href="#">
-                            <picture>
-                                <img class="grid-item__btn-img" src="asset/image/icon__plus.svg" alt="plus">
-                            </picture>
-                        </a>
-                    </div>
-                </div> -->
 
-            </div>
+        </div>
         </div>
     </section>
     <section class="blog">
@@ -443,19 +356,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="comments__form">
+                        <form class="comments__form form" action="#">
                             <h4 class="comments__h4">LEAVE A REPLY</h4>
                             <span class="coments__span">Your email address will not be published. Required fields are marked with</span>
-                            <div class="comments__input-container">
-                                <input class="comments__form-name comments__form-input" type="text" placeholder="Your Name">
-                                <input class="comments__form-email comments__form-input" type="email" placeholder="Your Email">
+                            <div class="form-top">
+                                <input class="form-input comment-input__half" id="comment__input-name" type="text" placeholder="Your Name">
+                                <input class="form-input comment-input__half" id="comment__input-email" type="email" placeholder="Your Email">
                             </div>
-                            <textarea class="comments__form-text  comments__form-input" placeholder="Comment"></textarea>
+                            <textarea class="form-input form-input__text comment__form-text" id="comment__input-text" placeholder="Comment"></textarea>
                             <p class="comments__form-p">
                                 You may use these  <b>HTML</b> tags and <b>attributes</b> : &lta href="" title=""&gt &ltabbr title=""&gt &ltacronym title=""&gt &ltb&gt &ltblockquote cite=""&gt &ltcite&gt &ltcode&gt &ltdel datetime=""&gt &ltem&gt &lti&gt &ltq cite=""&gt &ltstrike&gt &ltstrong&gt&lt/strong&gt
                             </p>
-                            <button class="comments__form-submit">POST COMMENT</button>
-                        </div>
+                            <button class="form-btn comment__form-btn" id="comment__form-btn">POST COMMENT</button>
+                        </form>
                     </div>
                 </div>
                 <div class="blog__middle-right">
@@ -584,6 +497,38 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="h2-main contact__h2">Contact</h2>
+            <h3 class="h3-main contact__h3">recent blog writing</h3>
+        <div class="contact__container-inner">
+            <div class="contact__head">
+                <div class="contact__head-item">
+                    <picture>
+                        <img class="contact__head-image" src="asset/image/icon__email.svg" alt="mail icon">
+                    </picture>
+                    <a class="contact__head-a" href="mailto:info@emrahdemirag.com">info@emrahdemirag.com</a>
+                </div>
+                <div class="contact__head-item">
+                    <picture>
+                        <img class="contact__head-image" src="asset/image/icon__phone.svg" alt="phone icon">
+                    </picture>
+                    <a class="contact__head-a" href="tel:+8882572386">(+888) 257 23 86</a>
+                </div>
+            </div>
+                <form class="contact__form form" action="#">
+                    <div class="contact__form-top form-top">
+                        <input class="form-input contact-input__half" id="contact__input-name" type="text" placeholder="Your Name">
+                        <input class="form-input contact-input__half" id="contact__input-email"  type="email" placeholder="Your Email">
+                    </div>
+                    <textarea class="form-input form-input__text contact__form-text" id="contact__input-text" placeholder="Your Message"></textarea>
+                    <button class="form-btn contact__form-btn" id="conact__form-btn">SEND MESSAGE</button>
+                </form>
+        </div>
+        
         </div>
     </section>
 

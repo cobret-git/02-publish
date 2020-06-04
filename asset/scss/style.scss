@@ -603,41 +603,16 @@
         font-weight: 300;
         font-size: 13px;
         color: #898d9d;
-        margin-top: 22px;
+        margin: 22px 0;
         display: block;
     }
-    .comments__input-container {
-        margin-top: 40px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-    .comments__form-input {
-        background-color: #f8f8f8;
-        border: none;
-        font-weight: 300;
-        font-size: 16px;
-        color: #cacaca;
-        border-radius: 3px;
-        padding: 18px 10px 20px 30px;
-        box-sizing: border-box;
-        &::placeholder {
-            color: #cacaca;
-        }
-        &::-webkit-input-placeholder {
-            color: #cacaca;
-        }
-        &::-ms-input-placeholder {
-            color: #cacaca;
-        }
-    }
-    .comments__form-name,
-    .comments__form-email {
+    .comment-input__half {
         width: 325px;
     }
-    .comments__form-text {
-        width: 100%;
-        height: 200px;
+    .comment__form-btn {
+        margin-top: 30px;
+    }
+    .comment__form-text {
         margin-top: 20px;
     }
     .comments__form-p {
@@ -647,18 +622,6 @@
         margin-top: 20px;
         color: #cacaca;
         line-height: 25px;
-    }
-    .comments__form-submit {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #ffd670;
-        height: 56px;
-        color: #fff;
-        font-weight: bold;
-        padding: 0 35px;
-        margin-top: 30px;
-        border-radius: 3px;
     }
 }
 
@@ -731,5 +694,56 @@
         font-size: 13px;
         color: #ffd670;
         margin-top: 24px;
+    }
+}
+.contact {
+    padding: 100px 0;
+    font-family: 'Roboto Slab', serif;
+    .contact__container-inner {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .contact__h2 {
+        color: #5b6074;
+        &::before {
+            background-color: #dbdde5;
+        }
+    }
+    .contact__h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .contact__head {
+        margin-top: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__head-item {
+        display: block;
+    }
+    .contact__head-image {
+        width: 65px;
+        height: 65px;
+        vertical-align: middle;
+    }
+    .contact__head-a {
+        font-weight: 300;
+        font-size: 20px;
+        color: #a5aabe;
+        vertical-align: middle;
+        margin: 0 35px 0 20px;
+    }
+    .contact__form {
+        margin-top: 60px;
+    }
+    .contact-input__half {
+        width: 430px;
+    }
+    .contact__form-text {
+        margin-top: 40px;
+    }
+    .contact__form-btn {
+        margin: 40px auto 0;
     }
 }
