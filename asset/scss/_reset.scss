@@ -26,3 +26,13 @@ ul {
 hr {
     border: none;
 }
+input {
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+}
+textarea {
+    outline: none;
+    resize: none;
+}
