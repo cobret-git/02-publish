@@ -124,6 +124,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    font-family: 'Roboto Slab', serif;
     margin-top: 90px;
 
     .column.align__item {
@@ -131,9 +132,9 @@
     }
     .about__bottom-round {
         width: 371px;
+        height: 371px;
     }
     .about__bottom-h5 {
-        font-family: 'Roboto Slab', serif;
         text-transform: uppercase;
         text-align: left;
         font-weight: bold;
@@ -142,14 +143,12 @@
         color: #fff;
     }
     .about__bottom-h6 {
-        font-family: 'Roboto Slab', serif;
         font-weight: 400;
         font-size: 15px;
         color: #c4c0cf;
         margin-top: 30px;
     }
     .about__bottom-p {
-        font-family: 'Roboto Slab', serif;
         color: #c4c0cf;
         line-height: 30px;
         font-weight: 200;
@@ -190,73 +189,72 @@
     margin-top: 120px;
 }
 .portfolio__middle-left {
-    max-width: 483px;
     margin-right: 50px;
-    .slider-depiction__h3 {
-        color: #fff1ce;
-    }
-    .slider-descripto__headline {
-        font-family: 'Roboto Slab', serif;
-        font-weight: bold;
-        font-size: 23px;
-        color: #fff;
-        margin: 25px 0;
-    }
-    .slider-description__hr {
-        margin: 16px 0;
-        border-top: 1px solid #ffe39c;
-    }
-    .slider-description__list {
-        margin: 25px 0;
-        .list__item {
-            font-family: 'Roboto Slab', serif;
-            font-weight: 300;
-            font-size: 15px;
-            color: #fff;
-            margin-left: 30px;
-            padding-left: 25px;
-            position: relative;
-            &:not(:last-child) {
-                margin-bottom: 15px;
-            }
-            &::before {
-                content: '';
-                display: block;
-                position: absolute;
-                background-color: #fff;
-                transform: rotate(45deg);
-                width: 10px;
-                height: 10px;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                margin: auto 0;
-            }
-        }
-    }
-    .slider-description__p {
-        font-family: 'Roboto Slab', serif;
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 2em;
-        color: #fff;
-    }
-    .slider-description__tags {
-        margin-top: 25px;
-        .slider-description__tag {
-            font-family: 'Roboto Slab', serif;
-            font-weight: 300;
-            font-size: 15px;
-            color: #fff;
-            &::after {
-                content: ', ';
-            }
-            &:last-child::after {
-                content: '';
-            }
+}
+.slider-description {
+        max-width: 483px;
 
+        &__h3 {
+            color: #fff1ce;
         }
-    }
+        &__headline {
+            font-weight: bold;
+            font-size: 23px;
+            color: #fff;
+            margin: 25px 0;
+        }
+        &__hr {
+            margin: 16px 0;
+            border-top: 1px solid #ffe39c;
+        }
+        &__p {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 2em;
+            color: #fff;
+        }
+        &__tags {
+            margin-top: 25px;
+            .slider-description__tag {
+                font-weight: 300;
+                font-size: 15px;
+                color: #fff;
+                &::after {
+                    content: ', ';
+                }
+                &:last-child::after {
+                    content: '';
+                }
+    
+            }
+        }
+        &__list {
+            margin: 25px 0;
+            .list__item {
+                font-weight: 300;
+                font-size: 15px;
+                color: #fff;
+                margin-left: 30px;
+                padding-left: 25px;
+                position: relative;
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    background-color: #fff;
+                    transform: rotate(45deg);
+                    width: 10px;
+                    height: 10px;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    margin: auto 0;
+                }
+            }
+        }
 }
 .portfolio__middle-right {
     position: relative;
@@ -293,89 +291,6 @@
         right: 0;
     }
 }
-// .portfolio__bottom {
-//     margin-top: 90px;
-//     text-align: center;
-//     .portfolio__bottom-buttons {
-//         display: inline-block;
-//     }
-//     .portfolio__bottom-button {
-//         font-family: 'Roboto Slab', serif;
-//         text-transform: uppercase;
-//         font-weight: 400;
-//         font-size: 12px;
-//         color: #fff;
-//         padding: 10px 15px;
-//         border: 1px solid transparent;
-//         &:not(:last-child) {
-//             margin-right: 45px;
-//         }
-//         &--active {
-//             border: 1px solid #fff0ca;
-//         }
-
-//     }
-// }
-// .portfolio__bottom-grid {
-//     margin-top: 60px;
-//     .grid-item {
-//         display: flex;
-//         align-items: center;
-//         justify-content: flex-end;
-//         flex-direction: column;
-//         text-align: center;
-//         width: 340px;
-//         height: 340px;
-//         padding: 65px;
-//         position: relative;
-//         z-index: 1;
-//         &::after {
-//             content: '';
-//             display: block;
-//             position: absolute;
-//             top: 0;
-//             left: 0;
-//             right: 0;
-//             bottom: 0;
-//             margin: auto;
-//             width: 340px;
-//             height: 340px;
-//             border-radius: 20px;
-//             background-color: #5c5766;
-//             transform: rotate(45deg);
-//             z-index: -1;
-//         }
-//     }
-//     .grid-item__btn {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         border-radius: 50%;
-//         background-color: #bc492b;
-//         width: 64px;
-//         height: 64px;
-//         margin-top: 10px;
-//         margin-bottom: 64px;
-//     }
-//     .grid-item__h5 {
-//         font-family: 'Roboto Slab', serif;
-//         font-weight: bold;
-//         color: #fff;
-//         font-size: 16px;
-//     }
-//     .grid-item__p {
-//         font-family: 'Roboto Slab', serif;
-//         font-weight: 300;
-//         font-size: 13px;
-//         line-height: 20px;
-//         color: #fff;
-//         margin-top: 15px;
-//         max-width: 260px;
-//     }
-//     .grid-item__btn-img {
-//         width: 24px;
-//     }
-// }
 
 .blog {
     padding: 90px 0 0;
@@ -699,51 +614,51 @@
 .contact {
     padding: 100px 0;
     font-family: 'Roboto Slab', serif;
-    .contact__container-inner {
+    &__container-inner {
         max-width: 900px;
         margin: 0 auto;
     }
-    .contact__h2 {
+    &__h2 {
         color: #5b6074;
         &::before {
             background-color: #dbdde5;
         }
     }
-    .contact__h3 {
+    &__h3 {
         text-align: center;
         margin-top: 20px;
     }
-    .contact__head {
+    &__head {
         margin-top: 65px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .contact__head-item {
+    &__head-item {
         display: block;
     }
-    .contact__head-image {
+    &__head-image {
         width: 65px;
         height: 65px;
         vertical-align: middle;
     }
-    .contact__head-a {
+    &__head-a {
         font-weight: 300;
         font-size: 20px;
         color: #a5aabe;
         vertical-align: middle;
         margin: 0 35px 0 20px;
     }
-    .contact__form {
+    &__form {
         margin-top: 60px;
     }
-    .contact-input__half {
+    &-input__half {
         width: 430px;
     }
-    .contact__form-text {
+    &__form-text {
         margin-top: 40px;
     }
-    .contact__form-btn {
+    &__form-btn {
         margin: 40px auto 0;
     }
 }
