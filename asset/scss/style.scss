@@ -1,6 +1,7 @@
 @import 'reset.scss';
 @import 'block.scss';
 @import 'libs.min.scss';
+@import 'media.scss';
 
 @mixin f-center-between {
     display: flex;
@@ -8,16 +9,18 @@
     justify-content: space-between;
 }
 
+
 .header {
     background-color: #5c5766;
     text-align: center;
     padding: 60px 0 120px;
-}
-.header__nav {
-    @include f-center-between;
-    max-width: 950px;
-    margin: 0 auto;
-    .header__nav-item {
+
+    &__nav-list {
+        @include f-center-between;
+        max-width: 950px;
+        margin: 0 auto;
+    }
+    &__nav-item {
         text-transform: uppercase;
         font-family: 'Roboto Slab', serif;
         font-weight: bold;
@@ -25,63 +28,65 @@
         font-size: 15px;
         letter-spacing: 0.1em;
     }
-}
-.header__main {
-    margin-top: 130px;
-    font-family: 'Roboto Slab', serif;
-}
-.header__main-h3 {
-    text-transform: uppercase;
-    font-weight: normal;
-    color: #fff;
-    font-size: 35px;
-    letter-spacing: 0.04em;
-    margin-top: 45px;
-}
-.header__main-h2 {
-    font-weight: 300;
-    color: #fff;
-    font-size: 66px;
-    margin: 25px;
+    &__main {
+        margin-top: 130px;
+        font-family: 'Roboto Slab', serif;
+    }
+    &__main-h3 {
+        text-transform: uppercase;
+        font-weight: normal;
+        color: #fff;
+        font-size: 35px;
+        letter-spacing: 0.04em;
+        margin-top: 45px;
+    }
+    &__main-h2 {
+        font-weight: 300;
+        color: #fff;
+        font-size: 66px;
+        margin: 25px;
+        b{
+            font-weight: bold;
+        }
+    }
+    &__main-h4 {
+        font-weight: 300;
+        font-size: 22px;
+        color: #fff;
+        margin-top: 20px;
+    }
+    &__links {
+        margin: 40px auto 0;
+        position: relative;
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 88px;
+            background-color: #c4c0cf;
+            position: absolute;
+            top: 0px;
+            left: -88px;
+            bottom: 0;
+            margin: auto 0;
+        }
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 88px;
+            background-color: #c4c0cf;
+            position: absolute;
+            top: 0px;
+            right: -88px;
+            bottom: 0;
+            margin: auto 0;
+        }
+    }
 
-    b{
-        font-weight: bold;
-    }
 }
-.header__main-h4 {
-    font-weight: 300;
-    font-size: 22px;
-    color: #fff;
-    margin-top: 20px;
-}
-.header__social-links {
-    margin: 40px auto 0;
-    position: relative;
-    &::before {
-        content: '';
-        display: inline-block;
-        height: 2px;
-        width: 88px;
-        background-color: #c4c0cf;
-        position: absolute;
-        top: 0px;
-        left: -88px;
-        bottom: 0;
-        margin: auto 0;
-    }
-    &::after {
-        content: '';
-        display: inline-block;
-        height: 2px;
-        width: 88px;
-        background-color: #c4c0cf;
-        position: absolute;
-        top: 0px;
-        right: -88px;
-        bottom: 0;
-        margin: auto 0;
-    }
-}
+
+
 .header__about-me {
     @include f-center-between;
     max-width: 775px;
