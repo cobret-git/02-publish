@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="contaienr">
+        <div class="container">
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="#">home</a></li>
@@ -55,7 +55,7 @@
                 <h3 class="h3-main about__top-h3">Do you want to know me?</h3>
             </div>
             <div class="about__bottom">
-                <div class="column">
+                <div class="column about__text-column">
                     <h5 class="about__bottom-h5">Whoa am i?</h5>
                     <p class="about__bottom-p">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum id quibusdam cumque molestiae, alias debitis dignissimos vel repudiandae omnis temporibus, laboriosam aut obcaecati.
@@ -77,15 +77,16 @@
                         </a> 
                     </div>
                 </div>
-                <div class="column align__item">
+                <div class="column about__round-column align__item">
                     <picture>
                         <img class="about__bottom-round" src="asset/image/about__round.svg" alt="round">
                     </picture>
                 </div>
-                <div class="column">
+                <div class="column about__progress-column">
                     <h5 class="about__bottom-h5">My skills</h5>
                     <h6 class="about__bottom-h6">Design Program</h6>
                     <div class="progress-bar about__bottom-progress">
+                        <!-- Для ширины .progress-bar-fill берется заничение из блока .progress-bar__value -->
                         <div class="progress-bar__fill">
                             <span class="progress-bar__property">Adobe Photoshoop</span>
                             <span class="progress-bar__value">100%</span>
@@ -137,99 +138,125 @@
             <div class="portfolio__middle">
                 <div class="portfolio__middle-left">
                     <div class="slider-description">
-                        <div class="slide">
-                            <h3 class="h3-main slider-description__h3">project name</h3>
-                            <div class="slider-description__headline">Android 8 Weather App Design</div>
-                            <hr class="slider-description__hr">
-                            <h3 class="h3-main slider-description__h3">Project Description</h3>
-                            <ul class="slider-description__list">
-                                <!-- значки перед элемнтом списка задаются автоматически через css -->
-                                <li class="list__item">Os 7 Design</li>
-                                <li class="list__item">Weahter App icons</li>
-                                <li class="list__item">iPhone App Design</li>
-                            </ul>
-                            <p class="slider-description__p">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto error, fuga at laboriosam corrupti a inventore deleniti quo fugiat commodi quia perspiciatis placeat consequatur?
-                            </p>
-                            <hr class="slider-description__hr">
-                            <h3 class="h3-main slider-description__h3">Project Web sito or Address</h3>
-                            <ul class="slider-description__list">
-                                <li class="list__item">https://www.uipixels.com/</li>
-                            </ul>
-                            <hr class="slider-description__hr">
-                            <h3 class="h3-main slider-description__h3">Tags</h3>
-                            <div class="slider-description__tags">
-                                <!-- Запятые вместе с пробелом задаются автоматически всем кроме последнего элемента в css -->
-                                <span class="slider-description__tag">iphone</span>
-                                <span class="slider-description__tag">iO7</span>
-                                <span class="slider-description__tag">weather</span>
-                                <span class="slider-description__tag">app</span>
-                                <span class="slider-description__tag">design</span>
-                                <span class="slider-description__tag">apple</span>
+                        <div class="slider-description__slide">
+                            <div class="slider-description__slide-part">
+                                <h3 class="h3-main slider-description__h3">project name</h3>
+                                <div class="slider-description__headline">Android 8 Weather App Design</div>
+                                <hr class="slider-description__hr">
                             </div>
-                        </div>
-                        <div class="slide">
-                            <h3 class="h3-main slider-description__h3">project name</h3>
-                            <div class="slider-description__headline">Android 8 Weather App Design</div>
-                            <hr class="slider-description__hr">
-                            <h3 class="h3-main slider-description__h3">Project Description</h3>
-                            <ul class="slider-description__list">
-                                <!-- значки перед элемнтом списка задаются автоматически через css -->
-                                <li class="list__item">Os 7 Design</li>
-                                <li class="list__item">Weahter App icons</li>
-                                <li class="list__item">iPhone App Design</li>
-                            </ul>
-                            <p class="slider-description__p">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto error, fuga at laboriosam corrupti a inventore deleniti quo fugiat commodi quia perspiciatis placeat consequatur?
-                            </p>
-                            <hr class="slider-description__hr">
-                            <h3 class="h3-main slider-description__h3">Project Web sito or Address</h3>
-                            <ul class="slider-description__list">
-                                <li class="list__item">https://www.uipixels.com/</li>
-                            </ul>
-                            <hr class="slider-description__hr">
-                            <h3 class="h3-main slider-description__h3">Tags</h3>
-                            <div class="slider-description__tags">
-                                <!-- Запятые вместе с пробелом задаются автоматически всем кроме последнего элемента в css -->
-                                <span class="slider-description__tag">iphone</span>
-                                <span class="slider-description__tag">iO7</span>
-                                <span class="slider-description__tag">weather</span>
-                                <span class="slider-description__tag">app</span>
-                                <span class="slider-description__tag">design</span>
-                                <span class="slider-description__tag">apple</span>
+                            
+                            <div class="slider-description__slide-part">
+                                <h3 class="h3-main slider-description__h3">Project Description</h3>
+                                <ul class="slider-description__list">
+                                    <!-- значки перед элемнтом списка задаются автоматически через css -->
+                                    <li class="list__item">Os 7 Design</li>
+                                    <li class="list__item">Weahter App icons</li>
+                                    <li class="list__item">iPhone App Design</li>
+                                </ul>
+                                <p class="slider-description__p">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto error, fuga at laboriosam corrupti a inventore deleniti quo fugiat commodi quia perspiciatis placeat consequatur?
+                                </p>
+                                <hr class="slider-description__hr">
                             </div>
+                            <div class="slider-description__slide-part">
+                                <h3 class="h3-main slider-description__h3">Project Web sito or Address</h3>
+                                <ul class="slider-description__list">
+                                    <li class="list__item">https://www.uipixels.com/</li>
+                                </ul>
+                                <hr class="slider-description__hr">
+                                <h3 class="h3-main slider-description__h3">Tags</h3>
+                                <div class="slider-description__tags">
+                                    <!-- Запятые вместе с пробелом задаются автоматически всем кроме последнего элемента в css -->
+                                    <span class="slider-description__tag">iphone</span>
+                                    <span class="slider-description__tag">iO7</span>
+                                    <span class="slider-description__tag">weather</span>
+                                    <span class="slider-description__tag">app</span>
+                                    <span class="slider-description__tag">design</span>
+                                    <span class="slider-description__tag">apple</span>
+                                </div>
+                            </div>                        
                         </div>
-                        <div class="slide">
-                            <h3 class="h3-main slider-description__h3">project name</h3>
-                            <div class="slider-description__headline">Android 8 Weather App Design</div>
-                            <hr class="slider-description__hr">
-                            <h3 class="h3-main slider-description__h3">Project Description</h3>
-                            <ul class="slider-description__list">
-                                <!-- значки перед элемнтом списка задаются автоматически через css -->
-                                <li class="list__item">Os 7 Design</li>
-                                <li class="list__item">Weahter App icons</li>
-                                <li class="list__item">iPhone App Design</li>
-                            </ul>
-                            <p class="slider-description__p">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto error, fuga at laboriosam corrupti a inventore deleniti quo fugiat commodi quia perspiciatis placeat consequatur?
-                            </p>
-                            <hr class="slider-description__hr">
-                            <h3 class="h3-main slider-description__h3">Project Web sito or Address</h3>
-                            <ul class="slider-description__list">
-                                <li class="list__item">https://www.uipixels.com/</li>
-                            </ul>
-                            <hr class="slider-description__hr">
-                            <h3 class="h3-main slider-description__h3">Tags</h3>
-                            <div class="slider-description__tags">
-                                <!-- Запятые вместе с пробелом задаются автоматически всем кроме последнего элемента в css -->
-                                <span class="slider-description__tag">iphone</span>
-                                <span class="slider-description__tag">iO7</span>
-                                <span class="slider-description__tag">weather</span>
-                                <span class="slider-description__tag">app</span>
-                                <span class="slider-description__tag">design</span>
-                                <span class="slider-description__tag">apple</span>
+
+                        <div class="slider-description__slide">
+                            <div class="slider-description__slide-part">
+                                <h3 class="h3-main slider-description__h3">project name</h3>
+                                <div class="slider-description__headline">Another Project Name 2</div>
+                                <hr class="slider-description__hr">
                             </div>
+                            
+                            <div class="slider-description__slide-part">
+                                <h3 class="h3-main slider-description__h3">Project Description</h3>
+                                <ul class="slider-description__list">
+                                    <!-- значки перед элемнтом списка задаются автоматически через css -->
+                                    <li class="list__item">Os 7 Design</li>
+                                    <li class="list__item">Weahter App icons</li>
+                                    <li class="list__item">iPhone App Design</li>
+                                </ul>
+                                <p class="slider-description__p">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto error, fuga at laboriosam corrupti a inventore deleniti quo fugiat commodi quia perspiciatis placeat consequatur?
+                                </p>
+                                <hr class="slider-description__hr">
+                            </div>
+                            <div class="slider-description__slide-part">
+                                <h3 class="h3-main slider-description__h3">Project Web sito or Address</h3>
+                                <ul class="slider-description__list">
+                                    <li class="list__item">https://www.uipixels.com/</li>
+                                </ul>
+                                <hr class="slider-description__hr">
+                                <h3 class="h3-main slider-description__h3">Tags</h3>
+                                <div class="slider-description__tags">
+                                    <!-- Запятые вместе с пробелом задаются автоматически всем кроме последнего элемента в css -->
+                                    <span class="slider-description__tag">iphone</span>
+                                    <span class="slider-description__tag">iO7</span>
+                                    <span class="slider-description__tag">weather</span>
+                                    <span class="slider-description__tag">app</span>
+                                    <span class="slider-description__tag">design</span>
+                                    <span class="slider-description__tag">apple</span>
+                                </div>
+                            </div>                        
                         </div>
+
+                        <div class="slider-description__slide">
+                            <div class="slider-description__slide-part">
+                                <h3 class="h3-main slider-description__h3">project name</h3>
+                                <div class="slider-description__headline">Another Project Name 3</div>
+                                <hr class="slider-description__hr">
+                            </div>
+                            
+                            <div class="slider-description__slide-part">
+                                <h3 class="h3-main slider-description__h3">Project Description</h3>
+                                <ul class="slider-description__list">
+                                    <!-- значки перед элемнтом списка задаются автоматически через css -->
+                                    <li class="list__item">Os 7 Design</li>
+                                    <li class="list__item">Weahter App icons</li>
+                                    <li class="list__item">iPhone App Design</li>
+                                </ul>
+                                <p class="slider-description__p">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto error, fuga at laboriosam corrupti a inventore deleniti quo fugiat commodi quia perspiciatis placeat consequatur?
+                                </p>
+                                <hr class="slider-description__hr">
+                            </div>
+                            <div class="slider-description__slide-part">
+                                <h3 class="h3-main slider-description__h3">Project Web sito or Address</h3>
+                                <ul class="slider-description__list">
+                                    <li class="list__item">https://www.uipixels.com/</li>
+                                </ul>
+                                <hr class="slider-description__hr">
+                                <h3 class="h3-main slider-description__h3">Tags</h3>
+                                <div class="slider-description__tags">
+                                    <!-- Запятые вместе с пробелом задаются автоматически всем кроме последнего элемента в css -->
+                                    <span class="slider-description__tag">iphone</span>
+                                    <span class="slider-description__tag">iO7</span>
+                                    <span class="slider-description__tag">weather</span>
+                                    <span class="slider-description__tag">app</span>
+                                    <span class="slider-description__tag">design</span>
+                                    <span class="slider-description__tag">apple</span>
+                                </div>
+                            </div>                        
+                        </div>
+
+                        
+                        
                     </div>
                 </div>
                 <div class="portfolio__middle-right">
@@ -244,23 +271,31 @@
                         </picture>
                     </button>
                     <div class="slider-depiction">
-                        
-                        <div class="slide slide-depiction">
-                            <picture>
-                                <img class="slider-depiction__image" data-lazy="asset/image/slider-depiction__image.jpg" alt="image">
-                            </picture>
+                        <div class="slider-depiction__slide">
+                            <div class="slider-depiction__slide-ratio"></div>
+                            <div class="slider-depiction__slide-content">
+                                <picture>
+                                    <img class="slider-depiction__image" data-lazy="asset/image/slider-depiction__image.jpg" alt="image">
+                                </picture>
+                            </div>
                         </div>
-                        <div class="slide slide-depiction">
-                            <picture>
-                                <img class="slider-depiction__image" data-lazy="asset/image/slider-depiction__image.jpg" alt="image">
-                            </picture>
+                        <div class="slider-depiction__slide">
+                            <div class="slider-depiction__slide-ratio"></div>
+                            <div class="slider-depiction__slide-content">
+                                <picture>
+                                    <img class="slider-depiction__image" data-lazy="asset/image/slider-depiction__image.jpg" alt="image">
+                                </picture>
+                            </div>
                         </div>
-                       <div class="slide slide-depiction">
-                            <picture>
-                                <img class="slider-depiction__image" data-lazy="asset/image/slider-depiction__image.jpg" alt="image">
-                            </picture>
+                        <div class="slider-depiction__slide">
+                            <div class="slider-depiction__slide-ratio"></div>
+                            <div class="slider-depiction__slide-content">
+                                <picture>
+                                    <img class="slider-depiction__image" data-lazy="asset/image/slider-depiction__image.jpg" alt="image">
+                                </picture>
+                            </div>
                         </div>
-                        
+                    </div>
                     </div>
                 </div>
             </div>

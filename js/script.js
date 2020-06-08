@@ -9,9 +9,7 @@ $(function(){
 
 
 $('.slider-depiction').slick({
-    // arrows: false
     lazyLoad: 'ondemand',
-    swipe: false,
     prevArrow: $('.slider-depiction__arrow-prev'),
     nextArrow: $('.slider-depiction__arrow-next'),
     asNavFor: '.slider-description'
@@ -22,19 +20,4 @@ $('.slider-description').slick({
     fade: true,
     asNavFor: '.slider-depiction'
 })
-// $('.portfolio__bottom-grid').isotope({
-
-// });
-// $('.portfolio__bottom-button').on('click touchart', function(){
-//     $('.portfolio__bottom-button').removeClass('portfolio__bottom-button--active');
-//     $(this).addClass('portfolio__bottom-button--active');
-//     var filterValue = $(this).attr('data-i');
-//     console.log(filterValue)
-//     $('.portfolio__bottom-grid').isotope({ filter: filterValue})
-// })
-// $('.portfolio__bottom-grid').isotope({
-//     getSortData: {
-
-//     }
-// })
 });
