@@ -6,11 +6,6 @@
     .portfolio__middle-right {
         width: 50%;
     }
-    .slider-depiction {
-        &__container-ratio {
-            // padding-top: ;
-        }
-    }
     .about__round-column {
         width: 321px;
     }
@@ -69,6 +64,64 @@
         vertical-align: top;
         &:not(:last-child) {
             margin-right: 20px;
+        }
+    }
+}
+@media all and(max-width: 992px) {
+    .header, .about, .portfolio, .blog, .contact {
+        font-size: 12px;
+    }
+    .blog {
+        &__middle {
+            display: block;
+        }
+        &__middle-left {
+            margin: 0 auto;
+        }
+        &__middle-right {
+            display: none;
+        }
+    }
+}
+@media all and(max-width: 768px){
+    .header, .about, .portfolio, .blog, .contact {
+        font-size: 10px;
+    }
+    .header {
+        padding: 20px 0 60px;
+        &__main {
+            margin-top: 60px;
+        }
+    }
+    .about {
+        &__bottom {
+            display: block;
+            // flex-direction: column;
+            // align-items: center;
+        }
+        &__text-column {
+            width: unset;
+        }
+        &__progress-column {
+            margin-top: 20px;
+            width: unset;
+        }
+    }
+    
+    .form {
+        &-top {
+            display: block;
+            text-align: center;
+        }
+        &-input--half {
+            margin-top: 10px;
+            width: 100%;
+        }
+    }
+    .contact {
+        &__head {
+            display: block;
+            text-align: center;
         }
     }
 }
